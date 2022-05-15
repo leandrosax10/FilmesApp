@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ui.detalhesFilme.DetalhesFilmeActivity">
+
+   <androidx.appcompat.widget.Toolbar
+       android:id="@+id/toolbar"
+       android:layout_width="413dp"
+       android:layout_height="51dp"
+       android:background="@color/black"
+       android:text="@string/filmes_em_cartaz"
+       android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+       app:elevation="4dp"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.0"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.0"
+       app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+       app:titleTextColor="@android:color/white"
+       tools:ignore="MissingConstraints" />
+
+   <TextView
+       android:id="@+id/textTituloFilme"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textAlignment="center"
+       android:textColor="@android:color/white"
+       android:textSize="16sp"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.498"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.022"
+       tools:text="Título do Filme" />
+
+   <TextView
+       android:id="@+id/text_data_lancamento"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textColor="@android:color/black"
+       android:textSize="18sp"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.841"
+       tools:text="Data de Lançamento" />
+
+   <TextView
+       android:id="@+id/text_idioma_original"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textColor="@android:color/black"
+       android:textSize="18sp"
+       android:textAlignment="center"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.792"
+       tools:text="Idioma de origem" />
+
+   <TextView
+       android:id="@+id/text_overview"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textColor="@android:color/black"
+       android:textSize="12sp"
+       android:textAlignment="center"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.6"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.695"
+       tools:text="Overview " />
+
+   <ImageView
+       android:id="@+id/image_poster_filme"
+       android:layout_width="412dp"
+       android:layout_height="308dp"
+       android:scaleType="fitXY"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.213" />
+
+   <ImageButton
+       android:id="@+id/imageButtonBack"
+       android:layout_width="30dp"
+       android:layout_height="30dp"
+       android:background="@null"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.0"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="@+id/toolbar"
+       app:layout_constraintVertical_bias="0.014"
+       app:srcCompat="@drawable/back" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
