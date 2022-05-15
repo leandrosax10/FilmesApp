@@ -3,7 +3,7 @@
 
 ![App](https://github.com/leandrosax10/FilmesApp/blob/master/gifAppMovie.gif)
 
-
+ ## Aquitetura utilizada - MVP
  
  ## Pré-requesitos
  O que você precisará:
